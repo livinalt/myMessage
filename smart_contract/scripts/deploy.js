@@ -15,7 +15,7 @@ async function main() {
   const initialMessage = "Hello, World!";
   const myMessage = await MyMessage.deploy(initialMessage);
 
-  console.log("MyMessage deployed to:", myMessage.address);
+  console.log(`"MyMessage deployed to:", ${myMessage.target}`);
 }
 
 main()

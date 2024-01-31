@@ -6,7 +6,7 @@ import contractABI from './abi.json';
 
 function App() {
 
-  const contractAddress = '0x4e7186d702af6425a0bbdb70fdb1867f8f127580';
+  const contractAddress = '0xe69a0D528F4a694F060Ea2dE37e43DdAA9F66ab1';
 
     async function requestAccount(){
       await window.ethereum.request({method:'eth_requestAccounts'});
@@ -42,7 +42,7 @@ function App() {
     
         try {    
           const transaction = await contract.getMessage();    
-          await transaction.wait();    
+          //await transaction.wait();    
           console.log('Message Retrieved');
     
         } catch (err) {    
