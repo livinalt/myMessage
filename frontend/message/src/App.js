@@ -21,7 +21,7 @@ function App() {
         const contract = new ethers.Contract(contractAddress, contractABI, signer);    
     
         try {    
-          const transaction = await contract.setMessage();    
+          const transaction = await contract.setMessage("Hello Boss");    
           await transaction.wait();    
           console.log('Message Set');
     
